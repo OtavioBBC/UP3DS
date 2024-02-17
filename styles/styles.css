@@ -58,6 +58,7 @@ color: #FFF;
 font-size: 0.83vw;
 font-weight: 300;
 list-style-type: none;
+padding: 0;
 }
 
   
@@ -132,14 +133,29 @@ section span {
 }
 
 h3 {
-	font-size: 1.1rem;
+	font-size: 1rem;
 	text-align: center;
+	margin: 0.5rem;
 }
 
 h2{
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 	text-align: center;
 }
+
+h4 {
+	color: #4A4A4A; 
+	width: 10rem;
+	font-size: 1rem;
+	padding: 0.94rem 1.94rem 0.94rem 1.88rem;
+	font-weight: 400; 
+	height: 3rem;
+	border-radius: 0.5rem;
+	border-bottom: 2px solid #00CBA4;
+	background: linear-gradient(180deg, #00CBA4 -23%, #27FFCB 76%);
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	white-space: nowrap;
+  }
 
 }
 
@@ -204,7 +220,7 @@ h2{
 	
 	font-family: Lexend Light;
 	font-size: 1.75rem;
-	font-weight: 700;
+	font-weight: 400;
 	color:#FFF;
 	margin-top: -0.5rem;
 }
@@ -236,7 +252,7 @@ font-size: calc(3.375rem - 50%);
 
 #inicio article h2 {
 	font-size: calc(1.75rem - 50%);
-	font-weight: 700;
+	font-weight: 400;
 	color:#FFF;
 	margin-top: -0.5rem;
 }
@@ -252,6 +268,10 @@ font-size: calc(3.375rem - 50%);
 
 #inicio {
 	height: 54rem;
+	background-image: linear-gradient(360deg,rgba(0, 0, 0, 0.00) 40%, #000 100%), linear-gradient(180deg,rgba(0, 0, 0, 0.00) 40%, #000 100%), url(../images/23.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 
@@ -263,8 +283,8 @@ font-size: calc(3.375rem - 50%);
 
 
 #inicio article h1 {
-	font-size: 1.8rem;
-	margin: 0;
+	font-size: 1.5rem;
+	margin: 1rem;
 	margin-top: 10rem;
 	width:auto;
 	word-break:keep-all;
@@ -275,6 +295,10 @@ font-size: calc(3.375rem - 50%);
 	font-size: 1rem;
 	text-align: center;
 	width: auto;
+}
+
+#inicio video {
+	display: none;
 }
 
 }
@@ -394,6 +418,7 @@ margin-right:20rem;
 	#quem-somos {
 		display: flex;
 		flex-direction: column;
+		text-align: center;
 	}
 
 	#quem-somos picture img {
@@ -410,23 +435,22 @@ margin-right:20rem;
 		opacity: 1;
 		width: 100%;
 		justify-content: flex-start;
+		padding-top: 3rem;
 
 	}
 
 	#quem-somos h2 {
 		margin: 0px;
-		font-size: 1.6rem;
+		font-size: 1.5rem;
 		width:18rem;
-	text-align: start;
 	margin: 1rem;
 		}
 		
 		#quem-somos p {
 			margin: 0px;
 		line-height: 1.5rem;
-    	font-size: 1.1rem;
+    	font-size: 1rem;
 		width:18rem;
-		text-align: start;
 		margin: 1rem;
 		}
 
@@ -692,6 +716,9 @@ padding-top:4rem;
 	height: 135vh;
 }
 
+#sva h2 {
+	margin: .5rem;
+}
 
 }
 /*------------------------------------------------------------------------------------------------------------------>
@@ -778,6 +805,7 @@ main{
 
 #galeria h2 {
 	margin-bottom: 2.06rem;
+	font-size: 1.5rem;
 }
 
 }
@@ -832,6 +860,12 @@ text-align: center;
 	align-items: flex-start ;
 	width: auto;
 	background-color:#000;
+	gap: 5rem;
+	height: auto;
+}
+
+#footer > ul {
+	padding-top: 5rem;
 }
 
 #footer ul li a {
@@ -853,6 +887,7 @@ text-align: center;
 	display: flex;
 	flex-direction: column;
 	align-items:center;
+	padding-top: 6rem;
 }
 
 #orçamento img {
@@ -889,17 +924,12 @@ font-weight: 700;
 	align-items: flex-end;
 }
 
-#rodape > h3 {
+
+#formulario-principal h3 {
 	color: var(--Green, #00FFCE);
 	font-size: 1.25rem; 
 	font-weight: 700; 
-	margin-right: 19.4rem;
-	margin-top: 2.81rem;
-}
-
-#formulario-principal {
-	margin-left: 6.09rem;
-	margin-right: 6.13rem;
+	margin-top: 2.81rem;	
 }
 
 #formulario-principal ul li {
@@ -910,7 +940,7 @@ font-weight: 700;
 label {
 font-size: 1rem;
 font-style: normal;
-font-weight: 700; 
+font-weight: 300; 
 margin-bottom: 1rem;
 }
 
@@ -1000,16 +1030,26 @@ margin-left: -5rem;
 /*-------------------------------------*/
 /*-------------------------------------*/
 
+#rodape {
+	height: auto;
+}
+
 #footer {
 flex-direction: column;
-height: 70rem;
 justify-content: center;
 align-items: center;
+gap: 2rem;
 }
 
 #formulario-principal {
 	margin: 0px;
-	margin-bottom: 3rem;
+	padding: 0;
+}
+
+#formulario-principal > ul{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 #formulario-principal input, textarea{
@@ -1020,11 +1060,8 @@ ul {
 	padding: 0px;
 }
 
-#rodape > h3 {
-	margin-top: 2rem;
-	margin-right: 0.5rem;
-	margin-left: 0rem;
-	font-size: 1.10rem;
+#formulario-principal > h3 {
+padding: 1rem;
 }
 
 #rodape > img {
@@ -1035,6 +1072,7 @@ ul {
 margin:0px;
 width: 18rem;
 align-self: center;
+padding: 0;
 }
 
 #orçamento h3 {
