@@ -984,6 +984,7 @@ line-break: auto;
 width: auto;
 white-space:normal;
 box-shadow: none;
+margin: 0;
 }
 
 #final {
