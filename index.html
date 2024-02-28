@@ -30,12 +30,15 @@
         <meta name="theme-color" content="#ffffff">
     
         <!-- Preload -->
-        <link rel="preload" as="font" type="font/woff2" href="/fonts/Lexend.woff2" crossorigin>
-        <link rel="preload" as="font" type="font/woff2" href="/fonts/Lexend-Light.woff2" crossorigin>
-        <link rel="preload" as="font" type="font/woff2" href="/fonts/Lexend-Bold.woff2" crossorigin>
-    
-    
+
+        <link rel="preload" as="font" type="font/woff2" href="fonts/Lexend-Bold.woff2" fetchpriority="high" crossorigin>
+
+        <link rel="preload" as="font" type="font/woff2" href="fonts/Lexend.woff2" crossorigin> 
+         
+      
         <link rel="stylesheet" href="/styles/styles.css">
+        
+
 
         <title>UP3D's</title>
     </head>
@@ -49,9 +52,7 @@
 <!------------------------->      
 
     <header id="inicio" id="cs-navigation" class="dobra">
-        <video poster="images/sva-poster.webp" autoplay muted loop>
-            <source src="https://up3ds.nyc3.cdn.digitaloceanspaces.com/1.mp4" type"video/mp4">
-        </video>
+        
 
 <div id="cs-navigation">
     <div class="cs-container">
@@ -137,9 +138,14 @@
 </div>
                                 
         <article>
-        <h1 id="titulo-principal">Explore todo o potencial dos seus projetos, com <span>sensibilidade, criatividade e excelência</span></h1>  
+        <h1 id="titulo-principal">EXPLORE TODO O POTENCIAL DOS SEUS PROJETOS, COM <span>SENSIBILIDADE, CRIATIVIDADE E EXCELÊNCIA</span></h1>  
         <h2 id="servicos">Projetos Arquitetônicos | Soluções Visuais em 3D | Lançamentos Imobiliários</h2>
         </article>
+
+        <video poster="images/sva-poster.webp" autoplay muted loop>
+            <source src="https://up3ds.nyc3.cdn.digitaloceanspaces.com/1.mp4" type"video/mp4">
+        </video>
+
     </header>
     <div class="fade"></div>
 <!-- SECTION 2 - Quem somos nós -->
@@ -367,9 +373,8 @@
 </div>
 </footer>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <a href="https://api.whatsapp.com/send?phone=5531996706086&text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20os%20Servi%C3%A7os%20e%20Planos%20Mensais%20de%20Terceiriza%C3%A7%C3%A3o%203D!%20%F0%9F%9A%80" class="float" target="_blank">
-<i class="fa fa-whatsapp my-float"></i>
+<img src="images/social/whatsapp 1.svg" alt="whatsapp button">
 </a>
 
 <script src="scripts/main.js"></script>
