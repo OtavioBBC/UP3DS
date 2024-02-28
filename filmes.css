@@ -1,0 +1,250 @@
+/*-- -------------------------- -->
+<---          Contact           -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  
+  #gallery-1152 .cs-image img{
+    padding-top: 0;
+  }
+
+  #cs-contact-265  .video {
+    padding: 5rem;
+    width: 50rem;
+  }
+
+  #cs-contact-265 {
+    padding: 3rem;
+    padding-top: 8rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #cs-contact-265 h1 {
+
+    font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+	  font-weight: 700;
+	  line-height: 1.2em;
+	  text-align: inherit;
+	  margin: 0;
+	  position: relative;
+	  text-transform:uppercase;
+  }
+
+  #cs-contact-265 h1 span {
+
+    font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+	  font-weight: 700;
+	  line-height: 1.2em;
+	  text-align: inherit;
+	  margin: 0;
+	  color:#00FFCE;
+	  position: relative;
+	  text-transform:uppercase;
+  }
+
+
+  #cs-contact-265 .cs-container {
+    width: 100%;
+    /* changes to 1280px at tablet */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+    text-align: center;
+  }
+  #cs-contact-265 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+    color: white;
+  }
+
+  #cs-contact-265 .cs-text {
+    line-height: 1.5em;
+    color: white;
+    width: 20rem;
+    padding-left: .5rem;
+    padding-left: .5rem;
+  }
+
+  #cs-contact-265 .cs-title {
+    line-height: 1.5em;
+    width: 20rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  #cs-contact-265 #cs-form-265 .cs-button-solid {
+    width: 100%;
+    font-family: "Lexend";
+  }
+
+
+  #cs-contact-265 .cs-header {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    line-height: 1.5em;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color:#00FFCE;
+    display: block;
+  }
+  #cs-contact-265 .cs-link {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    line-height: 1.5em;
+    text-decoration: none;
+    margin-bottom: 1.25rem;
+    color: white;
+    display: block;
+    position: relative;
+  }
+  #cs-contact-265 .cs-link:before {
+    /* Animated underline */
+    content: '';
+    width: 0%;
+    height: 2px;
+    /* current color of the parent */
+    background: currentColor;
+    opacity: 1;
+    position: absolute;
+    display: block;
+    bottom: -0.125rem;
+    left: 0;
+    transition: width .3s;
+  }
+  #cs-contact-265 .cs-link:hover:before {
+    width: 100%;
+  }
+  #cs-contact-265 .cs-link:last-of-type {
+    margin-bottom: 0;
+  }
+  #cs-contact-265 .cs-block {
+    /* sends second address line to the bottom on its own line */
+    display: block;
+    color: azure;
+  }
+  #cs-contact-265 .cs-bg-picture {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: transform .6s;
+  }
+  #cs-contact-265 .cs-bg-picture:before {
+    /* background color overlay */
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #cs-contact-265 .cs-bg-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* Makes img tag act as a background image */
+    object-fit: cover;
+  }
+}
+/* Tablet - 700px */
+@media only screen and (min-width: 43.75rem) {
+  #cs-contact-265 .cs-container {
+    max-width: 80rem;
+  }
+
+  #cs-contact-265 .cs-title {
+    width: auto;
+  }
+
+  #cs-contact-265 #cs-form-265 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  #cs-contact-265 #cs-form-265 label {
+    width: 48%;
+  }
+  #cs-contact-265 #cs-form-265 .cs-label-message {
+    width: 100%;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #cs-contact-265 .cs-container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    text-align: center;
+  }
+  #cs-contact-265 .cs-left-section {
+    max-width: 39.375rem;
+  }
+  #cs-contact-265 #cs-form-265 label {
+    width: 100%;
+  }
+  
+  #cs-contact-265 .cs-right-section:hover .cs-bg-picture {
+    transform: scale(1.1);
+  }
+  #cs-contact-265 .cs-block {
+    /* goes back to inline so it stays "in line" with the rest of the text */
+    display: inline-block;
+  }
+
+  #cs-contact-265 .cs-text {
+    width: auto;
+  }
+
+}
+/* Small Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #cs-contact-265 #cs-form-265 {
+    column-gap: 0rem;
+  }
+  #cs-contact-265 #cs-form-265 label {
+    width: 48%;
+    max-width: 19.0625rem;
+  }
+  #cs-contact-265 #cs-form-265 .cs-label-message {
+    max-width: 100%;
+  }
+  #cs-contact-265 .cs-right-section {
+    height: 36.125rem;
+  }
+}
+
+#gallery-1152 .cs-image img{
+  object-fit: cover;
+}
+
+#gallery-1152 .cs-gallery{
+  padding-top: 3rem;
+}
+
+#cs-contact-265  .video {
+  padding: 5rem;
+}
+
+#principal {
+  margin: 0;
+}
