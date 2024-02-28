@@ -24,7 +24,7 @@
 
 .cs-text {
   color: #FFF;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 300;
 }
 
@@ -37,7 +37,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
     #sbs-1308 {
-        padding: var(--sectionPadding);
+        padding: clamp(3.75rem, 10vw, 15.25rem) 1rem 1rem;
         overflow: hidden;
     
 
@@ -145,6 +145,7 @@
         justify-content: space-between;
         align-items: center;
         column-gap: 0.75rem;
+        text-align: center;
     }
     #sbs-1308 .cs-item {
         list-style: none;
@@ -160,7 +161,7 @@
         color: #0CDAB0;
         line-height: 1.2em;
         font-weight: 700;
-        text-align: left;
+        text-align: center;
         display: block;
         margin: 0 0 0.5rem 0;
     }
@@ -168,7 +169,7 @@
         font-size: 1rem;
         line-height: 1.5em;
         font-weight: 400;
-        text-align: left;
+        text-align: center;
         /* auto margin top will push text to bottom if there's only one line */
         margin: 0;
         color: var(--bodyTextColor);
@@ -252,7 +253,7 @@
     }
 
     #sbs-1308 .cs-h3 {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
     }
 
     #sbs-1308 .cs-content {
@@ -290,8 +291,8 @@
 
 #sbs-1308 .cs-text {
   color: #FFF;
-    font-size: 1.5rem;
-    font-weight: 300;
+    font-size: 1.25rem;
+    font-weight: 400;
 }
 }
 
@@ -313,7 +314,7 @@
     width: auto;
     height: auto;
     color: #FFF;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 300;
 }
     }
@@ -326,20 +327,24 @@
       flex-direction: column;
       align-items: center;
       /* 48px - 64px */
-      gap: clamp(3rem, 6vw, 4rem);
+      gap: clamp(1.5rem, 5vw, 3.3rem);
     }
 
     #why-choose-12 .cs-button-solid {
-      width: 18rem;
-      font-weight: 700;
-      height: 3.28306rem;
-      line-height: 3.28306rem;
-      border-radius: 0.5rem;
-      border-bottom: 2px solid #00CBA4;
-      background: linear-gradient(180deg, #00CBA4 -23%, #27FFCB 76%);
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-      white-space: nowrap;
-      font-size: 1.2rem;
+      z-index: 1;
+    box-sizing: border-box;
+    transition: color 0.3s;
+    position: relative;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 2.0625rem;
+    display: block;
+    width: 14rem;
+    height: 2.0625rem;
+    background: linear-gradient(269deg, #28FFCC -5.31%, #0CDAB0 100.18%);
+    border-radius: 0.25rem;
+    color: #000;
   }
     
 
@@ -391,7 +396,7 @@
     
     }
     #why-choose-12 .cs-h3 {
-      font-size: 1.5625rem;
+      font-size: 1.5rem;
       line-height: 1.2em;
       text-align: inherit;
       font-weight: 700;
@@ -402,7 +407,7 @@
     }
 
     #why-choose-12 .cs-item-text {
-      font-size: 1.35rem;
+      font-size: 1rem;
       text-align: inherit;
       line-height: 1.5em;
       margin: 0;
@@ -417,17 +422,40 @@
       justify-content: space-between;
       flex-direction: ROW;
     }
+
+#why-choose-12 .cs-text {
+  font-size: 1.5rem;
 }
 
+#why-choose-12 .cs-item-text {
+font-size: 1.25rem;
+}
+
+#why-choose-12 .cs-button-solid {
+  width: 18rem;
+  font-weight: 700;
+  height: 3.28306rem;
+  line-height: 3.28306rem;
+  border-radius: 0.5rem;
+  border-bottom: 2px solid #00CBA4;
+  background: linear-gradient(180deg, #00CBA4 -23%, #27FFCB 76%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+  font-size: 1.2rem;
+}
+
+
+}
 /*-- -------------------------- -->
 <---            CTA             -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
     #cta-51 {
-      padding: var(--sectionPadding);
+      padding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
       position: relative;
       height: 50rem;
+      background: linear-gradient(360deg,rgba(0, 0, 0, 0.00) 40%, #000 100%), linear-gradient(180deg,rgba(0, 0, 0, 0.00) 40%, #000 100%);
   
     }
     #cta-51 .cs-container {
@@ -458,7 +486,8 @@
 
     #cta-51 .cs-text {
       color: white;
-      font-size: 1.5rem;
+      font-size: 1rem;
+      font-weight: 300;
     }
     #cta-51 .cs-text {
       /* Override.  cs-topper cs-title and first cs-text should be removed and put into your global css sheet so it can control every instance of them on your site and is consistent. This selector is a section specific override that stays inside this stitch */
@@ -484,8 +513,6 @@
       display: block;
       height: 100%;
       width: 100%;
-      background: linear-gradient(360deg,rgba(0, 0, 0, 0.00) 40%, #000 100%),
-				linear-gradient(180deg,rgba(0, 0, 0, 0.00) 40%, #000 100%);
       opacity: .8;
       top: 0;
       left: 0;
@@ -501,16 +528,20 @@
     }
 
     #cta-51 .cs-button-solid {
-    width: 15rem;
-    font-weight: 700;
-    height: 3.28306rem;
-    line-height: 3.28306rem;
-    border-radius: 0.5rem;
-    border-bottom: 2px solid #00CBA4;
-    background: linear-gradient(180deg, #00CBA4 -23%, #27FFCB 76%);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    white-space: nowrap;
-    font-size: 1.2rem;
+      z-index: 1;
+      box-sizing: border-box;
+      transition: color 0.3s;
+      position: relative;
+      font-size: 1rem;
+      font-weight: 700;
+      text-align: center;
+      line-height: 2.0625rem;
+      display: block;
+      width: 14rem;
+      height: 2.0625rem;
+      background: linear-gradient(269deg, #28FFCC -5.31%, #0CDAB0 100.18%);
+      border-radius: 0.25rem;
+      color: #000;
     }
 
 
@@ -520,5 +551,19 @@
     color: white;
   font-size: 1.5rem;}
   }
+
+  #cta-51 .cs-button-solid {
+    width: 18rem;
+  font-weight: 700;
+  height: 3.28306rem;
+  line-height: 3.28306rem;
+  border-radius: 0.5rem;
+  border-bottom: 2px solid #00CBA4;
+  background: linear-gradient(180deg, #00CBA4 -23%, #27FFCB 76%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+  font-size: 1.2rem;
+  }
+
 
   }      

@@ -122,6 +122,41 @@ section span {
 	color:#0CDAB0;
 }
 
+.cs-button-solid {
+	font-size: 1rem;
+	font-weight: 700;
+	/* 46px - 56px */
+	text-align: center;
+	width: 14.8125rem;
+	height: 2.0625rem;
+	flex-shrink: 0;
+	margin: 0;
+	line-height: 2.0625rem;;
+	/* prevents padding from adding to the width */
+	background: linear-gradient(269deg, #28FFCC -5.31%, #0CDAB0 100.18%);
+	border-radius: 0.25rem;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	color: #000;
+  }
+  .cs-button-solid:before {
+	content: "";
+	width: 0%;
+	height: 100%;
+	background: #fff;
+	opacity: 1;
+	border-radius: 0.25rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	transition: width 0.3s;
+  }
+  .cs-button-solid:hover:before {
+	width: 100%;
+  }
+
 /*-------------------------------------*/
 /*-------------------------------------*/
 /*---     until 1008px - mobile    ---*/
@@ -177,7 +212,7 @@ h4 {
 
 #titulo-principal {
 	text-align: center;
-	font-size: 3.375rem;
+	font-size: clamp(3rem ,2.813vw, 3.375rem);
 	margin-top: 28.88rem;
 	color:#FFF;
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
@@ -218,7 +253,7 @@ h4 {
 #inicio article h2 {
 	
 	font-size: 1.75rem;
-	font-weight: 400;
+	font-weight: 300;
 	color:#FFF;
 	margin-top: -0.5rem;
 }
@@ -266,7 +301,7 @@ font-size: calc(3.375rem - 50%);
 
 #inicio {
 	height: 54rem;
-	background-image: linear-gradient(360deg,rgba(0, 0, 0, 0.00) 40%, #000 100%), linear-gradient(180deg,rgba(0, 0, 0, 0.00) 40%, #000 100%), url(../images/23-2.jpg);
+	background-image: linear-gradient(360deg,rgba(0, 0, 0, 0.00) 40%, #000 100%), linear-gradient(180deg,rgba(0, 0, 0, 0.00) 40%, #000 100%), url(../images/23-2.webp);
 	background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -506,10 +541,12 @@ text-align: center;
 }
 
 #imagem-3d {
-	background-image: linear-gradient(360deg,rgba(0, 0, 0, 0.00) 40%, #000 100%), linear-gradient(180deg,rgba(0, 0, 0, 0.00) 40%, #000 100%), url(../images/06.jpg);
+	background-image: linear-gradient(360deg,rgba(0, 0, 0, 0.00) 40%, #000 100%), linear-gradient(180deg,rgba(0, 0, 0, 0.00) 40%, #000 100%), url(../images/06.webp);
   background-repeat: no-repeat;
   background-size:cover;
   position: relative;
+  background-position-y: bottom;
+
 }
 
 }
@@ -580,7 +617,7 @@ text-align: center;
 /*-------------------------------------*/
 
 #filmes {
-	background-image: linear-gradient(360deg,rgba(0, 0, 0, 0.00) 40%, #000 100%), linear-gradient(180deg,rgba(0, 0, 0, 0.00) 40%, #000 100%), url(../images/filmes-3d.jpg);
+	background-image: linear-gradient(360deg,rgba(0, 0, 0, 0.00) 40%, #000 100%), linear-gradient(180deg,rgba(0, 0, 0, 0.00) 40%, #000 100%), url(../images/filmes-3d.webp);
 
   background-size:cover;
   position: relative;
@@ -620,7 +657,7 @@ text-align: center;
 
 
 #planta {
-background-image: linear-gradient(360deg,rgba(0, 0, 0, 0.00) 40%, #000 100%), linear-gradient(180deg,rgba(0, 0, 0, 0.00) 40%, #000 100%),url(../images/planta-humana.jpg); 
+background-image: linear-gradient(360deg,rgba(0, 0, 0, 0.00) 40%, #000 100%), linear-gradient(180deg,rgba(0, 0, 0, 0.00) 40%, #000 100%),url(../images/planta-humana.webp); 
   background-repeat: no-repeat;
   background-size:cover;
   position: relative;
@@ -644,7 +681,7 @@ background-image: linear-gradient(360deg,rgba(0, 0, 0, 0.00) 40%, #000 100%), li
 /*-------------------------------------*/
 
 #planta {
-	background-image: linear-gradient(360deg,rgba(0, 0, 0, 0.00) 40%, #000 100%), linear-gradient(180deg,rgba(0, 0, 0, 0.00) 40%, #000 100%),url(../images/01-m.jpg); 
+	background-image: linear-gradient(360deg,rgba(0, 0, 0, 0.00) 40%, #000 100%), linear-gradient(180deg,rgba(0, 0, 0, 0.00) 40%, #000 100%),url(../images/01-m.webp); 
 
 	background-size: cover;
 
@@ -702,7 +739,7 @@ background-image: linear-gradient(360deg,rgba(0, 0, 0, 0.00) 40%, #000 100%), li
 /*-------------------------------------*/
 
 #passeio {
-	background-image: linear-gradient(360deg,rgba(0, 0, 0, 0.00) 40%, #000 100%), linear-gradient(180deg,rgba(0, 0, 0, 0.00) 40%, #000 100%),url(../images/passeio.png); 
+	background-image: linear-gradient(360deg,rgba(0, 0, 0, 0.00) 40%, #000 100%), linear-gradient(180deg,rgba(0, 0, 0, 0.00) 40%, #000 100%),url(../images/passeio.webp); 
 	background-position-x: center;
 
 }
@@ -789,7 +826,7 @@ padding-top:4rem;
 /*-------------------------------------*/
 
 #sva {
-	background-image: linear-gradient(360deg,rgba(0, 0, 0, 0.00) 40%, #000 100%), linear-gradient(180deg,rgba(0, 0, 0, 0.00) 40%, #000 100%),url(../images/sva.png); 
+	background-image: linear-gradient(360deg,rgba(0, 0, 0, 0.00) 40%, #000 100%), linear-gradient(180deg,rgba(0, 0, 0, 0.00) 40%, #000 100%),url(../images/sva.webp); 
 	background-position-x: center;
 
 }
@@ -915,17 +952,48 @@ main{
 	width: auto;
 }
 
-#final h5 {
+
+
+#rodape .cs-contact-li .cs-social {
+	display: flex;
+	flex-direction: row;
+	gap: 1.5rem;
+}
+
+#rodape .cs-contact-li .cs-social .cs-social-link {
+	transition: transform 0.3s, background-color 0.3s;
+}
+
+#rodape .cs-contact-li .cs-social .cs-social-link:hover {
+	background-color: var(--primary);
+    transform: translateY(-0.1875rem);
+}
+
+#final h4 {
 font-size: 1.125rem;
 font-style: normal;
 font-weight: 300; 
 color: #FFF;
 text-align: center;
+height: auto;
+border-radius:0;
+border-bottom:0;
+background:0;
+box-shadow:0;
+line-break: auto;
+width: auto;
+white-space:normal;
+box-shadow: none;
 }
 
 #final {
 	background-color:#141414;
-	align-self: stretch;
+	width: 100%;
+	height: 4rem;
+}
+
+#final h4::before{
+	display: none;
 }
 
 #rodape > picture {
@@ -939,8 +1007,9 @@ text-align: center;
 	align-items: flex-start ;
 	width: auto;
 	background-color:#000;
-	gap: 5rem;
+	gap: 6.094rem;
 	height: auto;
+	padding-bottom: 8.375rem;
 }
 
 #footer > ul {
@@ -953,14 +1022,9 @@ text-align: center;
 	font-weight: 300;
 	text-transform: uppercase; 
 	font-size: 1rem;
-	margin-top: 0.94rem;
-	margin-bottom: 0.94rem;
+
 }
 
-#footer ul li img {
-	margin-top: 0.94rem;
-	margin-bottom: 0.94rem;
-}
 
 #orçamento {
 	display: flex;
@@ -970,7 +1034,7 @@ text-align: center;
 }
 
 #orçamento img {
-	margin-bottom: 2.5rem;
+	margin-bottom: .5rem;
 }
 
 #orçamento h3 {
@@ -988,6 +1052,13 @@ margin-bottom: 2.88rem;
 font-weight: 700;
 
 }
+
+#orçamento > a {
+	color: #000;
+	margin-bottom: 2.88rem;
+	font-weight: 700;
+	width: clamp(18rem, 18.125vw, 21.75rem);
+	}
 
 #redes-sociais picture {
 	display: flex;
@@ -1062,10 +1133,11 @@ font-style: normal;
 font-weight: 700; 
 border: #000;
 margin-top: 1.87rem;
+font-family: Lexend;
 }
 
 button::after {
-	content:url('../images/seta-direita.svg');
+	content:url('/images/seta-direita.svg');
 	margin-left: 0.38rem;
 	vertical-align: middle;
 	position: relative;
@@ -1096,6 +1168,10 @@ margin-left: -5rem;
 
 	#footer > ul {
 		display:none;
+	}
+
+	#footer {
+		gap:7rem;
 	}
 }
 
@@ -1157,14 +1233,19 @@ padding: 0;
 	margin-bottom: 1rem;
 	}
 
+
 #orçamento img {
 	width: 100%;
 	margin-bottom: 1rem;
 }
 
-#final h5 {
+#final h4 {
 	color: #FFF;
 	font-size: 0.8rem; 
+	justify-self: center;
+	align-items: center;
+	width: auto;
+	box-shadow: none;
 }
 
 }
@@ -1937,7 +2018,7 @@ padding: 0;
 @media only screen and (min-width: 0rem) {
 	#banner-712 {
 	  /* 175px - 200px top */
-	  padding: clamp(10.9375rem, 10vw, 12.5rem) 1rem 6.25rem;
+	  padding: clamp(5.9375rem, 10vw, 10.5rem) 1rem clamp(2rem, 3vw, 12.5rem);
 	  position: relative;
 	  z-index: 1;
 	}
